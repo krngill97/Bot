@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: rgb(4, 202, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Ensure full screen height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    height: 400px;
+    width: 650px;
+    border: 1px solid rgb(5, 185, 5);
+    overflow: hidden;
+}
+
+#input_text {
+    background-color: rgb(34, 34, 34);
+    color: rgb(72, 219, 4);
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    outline: none;
+    caret-color: rgb(72, 219, 4);
+    text-align: left;
+   
+    vertical-align: top; /* Add this to align text at the top */
+}
+
+#input_text::placeholder {
+    color: rgb(144, 238, 144); /* Slight green for placeholder text */
+}
