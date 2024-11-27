@@ -40,3 +40,26 @@ body {
 #input_text::placeholder {
     color: rgb(144, 238, 144); /* Slight green for placeholder text */
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make the container take most of the screen width */
+        height: 300px; /* Reduce height for smaller devices */
+    }
+
+    #input_text {
+        font-size: 14px; /* Slightly smaller text for mobile */
+        padding: 8px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 250px; /* Further reduce height for very small screens */
+    }
+
+    #input_text {
+        font-size: 12px; /* Smaller text for better readability on small screens */
+        padding: 5px; /* Compact padding */
+    }
+}
